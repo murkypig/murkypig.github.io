@@ -1,0 +1,405 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>40075 - A musical experience</title>
+  <meta name="description" content="An immersive journey to discover musical artists from all over the world.">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:100,300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="favicon.png" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@"/>
+  <meta name="twitter:description" content="An immersive journey to discover musical artists from all over the world." />
+  <meta name="twitter:title" content="40075" />
+  <meta name="twitter:image" content="https://40075.world/assets/img/cover.jpg">
+  <meta property="og:url" content="https://40075.world" />
+  <meta property="og:title" content="40075" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="An immersive journey to discover musical artists from all over the world." />
+  <meta property="og:image" content="https://40075.world/assets/img/cover.jpg" />
+</head>
+
+<body>
+
+<div class="cursor">
+  <svg>
+    <circle  cx="13.5" cy="13.5" r="12" />
+  </svg>
+  <div class="close_cursor"></div>
+</div>
+
+<div class="button menu_opener">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+<!-- LOADER -->
+<div class="loader ui_loader">
+    <h1 class="loader_el loader_title">
+      <div class="slide">An immersive journey to</div>
+      <div class="slide">discover musical artists</div>
+      <div class="slide">from all over the world</div>
+      <div class="loader_logo loader_el"></div>
+    </h1>
+    <div class="pourcent_container loader_el">
+      <div class="pourcent_bar_back"></div>
+      <div class="pourcent_bar"></div>
+      <div class="pourcent_txt"><span class="pourcent">0</span>%</div>
+    </div>
+</div>
+
+<!-- INTRO -->
+<div class="intro">
+  <div class="button_mobile_please">Please rotate your phone</div>
+  <!-- <div class="intro_text"></div> -->
+  <div class="button alternativebutton button_intro">
+    <div class="internal_button">
+      <span data-text="start your journey">start your journey</span>
+    </div>
+  </div>
+</div>
+
+<!-- SCENE -->
+<div class="scene">
+  <div class="title"></div>
+
+  <div class="button alternativebutton scene_previous">
+    <div class="separator">
+    </div>
+    <div class='internal_button'>
+      <span data-text="previous">previous</span>
+    </div>
+  </div>
+
+  <div class="button alternativebutton scene_artistopener">
+    <div class="internal_button">
+      <span data-text="artist">artist</span>
+    </div>
+  </div>
+
+    <div class="button alternativebutton scene_next">
+      <div class='internal_button'>
+        <span data-text="next">next</span>
+      </div>
+      <div class="next_artist"></div>
+      <div class="separator">
+      </div>
+    </div>
+
+  <div class="timeline">
+
+  </div>
+<!-- </div> -->
+</div>
+
+<div class="counter" id="counter-global">
+  <div class="counter-body">
+    <div class="counter-body-number-wrapper">
+      <div class="counter-body-number-container">
+        <!-- numbers  -->
+      </div>
+    </div>
+    <div class="counter-body-separator"></div>
+    <span class="counter-body-total">18</span>
+  </div>
+
+</div>
+
+<div id="counter-popup" class="counter-popup">
+  <div class="counter-popup-container">
+    <div class="counter-body">
+      <div class="counter-body-number-wrapper">
+        <div class="counter-body-number-container">
+          <span class="counter-body-number-content">1</span>
+        </div>
+      </div>
+      <div class="counter-body-separator"></div>
+      <span class="counter-body-total">3</span>
+    </div>
+
+    <span class="counter-label">Songs found</span>
+  </div>
+</div>
+
+
+<!-- ARTISTE -->
+<div class="artist panel">
+  <div class="panel_left">
+    <div class="panel_left_content">
+
+      <div class="player">
+        <div class="player_album"></div>
+        <div class="player_year"></div>
+        <div class="player_cover">
+          <img class="player_cover_img"/>
+        </div>
+        <div class="player_title"></div>
+        <div class="player_controls">
+          <div class="button player_controls_arrow player_controls_left">
+            <svg id="Mode_Isolation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 706.8 1080"><style>.st0{fill:#fff}</style><path class="st0" d="M0 7.5h177.7V1080H0z"/><path class="st0" d="M705.7 141.8V991L160.1 573.5z"/></svg>          </div>
+          <div class="player_controls_direct">
+            <svg class="player_controls_direct_background" viewBox="0 0 100 100" height="100" width="100" fill="transparent">
+              <circle cx="50" cy="50" r="49" stroke="white" stroke-width="1" />
+            </svg>
+            <svg class="player_controls_direct_progress" viewBox="0 0 100 100" height="100" width="100" fill="transparent">
+              <circle cx="50" cy="50" r="49" stroke="white" stroke-width="1" />
+            </svg>
+            <div class="player_controls_direct_play">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 722.1 1080"><path fill="#fff" d="M14.1 1080V0l693.8 531z"/></svg>              <svg id="Mode_Isolation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 722.1 1080"><style>.st0{fill:#fff}</style><path class="st0" d="M-.9 0h179v1080H-.9zM543.2 0h179v1080h-179z"/></svg>            </div>
+          </div>  
+          <div class="button player_controls_arrow player_controls_right">
+            <svg id="Mode_Isolation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 706.8 1080"><style>.st0{fill:#fff}</style><path class="st0" d="M0 7.5h177.7V1080H0z"/><path class="st0" d="M705.7 141.8V991L160.1 573.5z"/></svg>          </div>
+        </div>
+
+        <div class="player_time">00:<p class="player_time_value"></p></div>
+      </div>
+
+
+    </div>
+  </div>
+  <div class="panel_right">
+    <div class="button panel_close close">
+      <span></span>
+      <span></span>
+    </div>
+    <div class="panel_bg bg">
+     <div class="panel_overlaybg"></div>
+    </div>
+    <div class="panel_right_content">
+      <div class="artist_texts">
+        <a class="button alternativebutton underline_button logo spotify panel_linetxt" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 168 168"><path d="M83.996.277C37.747.277.253 37.77.253 84.019c0 46.251 37.494 83.741 83.743 83.741 46.254 0 83.744-37.49 83.744-83.741 0-46.246-37.49-83.738-83.745-83.738l.001-.004zm38.404 120.78a5.217 5.217 0 0 1-7.18 1.73c-19.662-12.01-44.414-14.73-73.564-8.07a5.222 5.222 0 0 1-6.249-3.93 5.213 5.213 0 0 1 3.926-6.25c31.9-7.291 59.263-4.15 81.337 9.34 2.46 1.51 3.24 4.72 1.73 7.18zm10.25-22.805c-1.89 3.075-5.91 4.045-8.98 2.155-22.51-13.839-56.823-17.846-83.448-9.764-3.453 1.043-7.1-.903-8.148-4.35a6.538 6.538 0 0 1 4.354-8.143c30.413-9.228 68.222-4.758 94.072 11.127 3.07 1.89 4.04 5.91 2.15 8.976v-.001zm.88-23.744c-26.99-16.031-71.52-17.505-97.289-9.684-4.138 1.255-8.514-1.081-9.768-5.219a7.835 7.835 0 0 1 5.221-9.771c29.581-8.98 78.756-7.245 109.83 11.202a7.823 7.823 0 0 1 2.74 10.733c-2.2 3.722-7.02 4.949-10.73 2.739z"/></svg><span>Discover on spotify</span><div class="alternativebutton_underline"></div></a>
+        <div class="panel_artist_title name"></div>
+        <div class="panel_subtitle bio"></div>
+      </div>
+
+      <div class="artist_numbers">
+        <div class="artist_number">
+          <div class="panel_section_title ">Monthly listeners</div>
+          <span class="panel_number listeners panel_linetxt"></span>
+        </div>
+        <div class="artist_number">
+          <div class="panel_section_title ">Followers</div>
+          <span class="panel_number followers panel_linetxt"></span>
+        </div>
+      </div>
+
+      <div class="panel_right_content_buttons">
+        <a class="button alternativebutton underline_button instagram" style="display: table;" target="_blank"><span>Instagram</span><div class="alternativebutton_underline"></div></a>
+        <a class="button alternativebutton underline_button facebook" style="display: table;" target="_blank"><span>Facebook</span><div class="alternativebutton_underline"></div></a>
+        <a class="button alternativebutton underline_button twitter" style="display: table;" target="_blank"><span>Twitter</span><div class="alternativebutton_underline"></div></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="end_pop">
+  <div class="end_container">
+    <div class="end_num">18/18</div>
+    <div class="end_congrats">congrats</div>
+    <div class="end_txt">
+    You have discovered the 18 musics<br>
+    To listen again, continue your journey<br>
+    through the different scenes.<br>
+    </div>
+  </div>
+</div>
+
+<!-- MENU -->
+<div class="menu">
+  <div class="menu_nav">
+    <div class="nav_container">
+      <div class="nav_item nav_item-activ button">
+        <div class="navitem_background navitem_background-0"></div>
+        <div class="navitem_num">01</div>
+        <div class="navitem_title">songhoy blues</div>
+      </div>
+      <div class="nav_item button">
+        <div class="navitem_background navitem_background-1"></div>
+        <div class="navitem_num">02</div>
+        <div class="navitem_title">tony allen</div>
+      </div>
+      <div class="nav_item button">
+        <div class="navitem_background navitem_background-2"></div>
+        <div class="navitem_num">03</div>
+        <div class="navitem_title">tinariwen</div>
+      </div>
+      <div class="nav_item button">
+        <div class="navitem_background navitem_background-3"></div>
+        <div class="navitem_num">04</div>
+        <div class="navitem_title">gily yalo</div>
+      </div>
+      <div class="nav_item button">
+        <div class="navitem_background navitem_background-4"></div>
+        <div class="navitem_num">05</div>
+        <div class="navitem_title navitem_title-break">mélanie de biasio</div>
+      </div>
+      <div class="nav_item button">
+        <div class="navitem_background navitem_background-5"></div>
+        <div class="navitem_num">06</div>
+        <div class="navitem_title">mélissa laveaux</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu_nav_container">
+    <div class="progressbar_back"></div>
+    <div class="progressbar"></div>
+  </div>
+
+  <div class="button alternativebutton menu_creditsopener menu_ui ">
+    <div class='internal_button'>
+        <span data-text="about">about</span>
+    </div>
+  </div>
+
+  <div class="share menu_ui">
+    <a class="button alternativebutton underline_button facebook white" href="https://www.facebook.com/sharer.php?s=100&p[url]=40075.world" target="_blank"><span>Facebook</span><div class="alternativebutton_underline"></div></a>
+    <a class="button alternativebutton underline_button twitter white" href="https://twitter.com/intent/tweet?text=Discover%2040075.world%20-%20An%20immersive%20journey%20to%20discover%20musical%20artists%20from%20all%20over%20the%20world%20%2340075" target="_blank"><span>Twitter</span><div class="alternativebutton_underline"></div></a>
+  </div>
+</div>
+
+<div class="credits panel">
+  <div class="panel_left">
+    <div class="panel_left_content">
+      <div class="panel_title">
+        <div class="slide">An immersive</div>
+        <div class="slide">journey to discover</div>
+        <div class="slide">musical artists from</div>
+        <div class="slide">all over the world</div>
+      </div>
+      <div class="panel_subtitle">
+        <div class="slide">Because music doesn’t know any borders, we invite you</div>
+        <div class="slide">to a melodic journey in a foreign land, a world tour</div>
+        <div class="slide">of music carrying emotions, stories and energies.</div>
+        <div class="slide">Embark on a tour of discoveries to listen to artists</div>
+        <div class="slide">from all over the world, a trip of 40075 kilometers.</div>
+      </div>
+      <div class="credits_thanks">
+        <a target="_blanks" href="https://www.gobelins.fr/"><div class="gobelins_logo"></div></a>
+        <a target="_blanks" href="https://developer.spotify.com/"><div class="spotify_logo"></div></a>
+      </div>
+    </div>
+  </div>
+  <div class="panel_right">
+    <div class="panel_bg"></div>
+    <div class="panel_close credits_close button">
+      <span></span>
+      <span></span>
+    </div>
+    <div class="panel_right_content">
+
+      <div class="credits_artists">
+        <div class="panel_section_title">artists</div>
+        <div class="panel_line_container">
+          <div class="credits_name panel_linetxt"><span class="number">01</span>Songhoy Blues</div>
+          <div class="credits_name panel_linetxt"><span class="number">02</span>Tony Allen</div>
+          <div class="credits_name panel_linetxt"><span class="number">03</span>Gily Yalo</div>
+          <div class="credits_name panel_linetxt"><span class="number">04</span>Tinariwen</div>
+          <div class="credits_name panel_linetxt"><span class="number">05</span>Mélanie de Biasio</div>
+          <div class="credits_name panel_linetxt"><span class="number">06</span>Mélissa Laveaux</div>
+        </div>
+      </div>
+
+      <div class="credits_team">
+        <div class="panel_section_title">design</div>
+          <div class="panel_line_container">
+            <a class="button alternativebutton underline_button credits_name-link panel_linetxt" href="https://www.behance.net/manonjouet9a7d" target="_blank"><span>Manon Jouet</span></a>
+            <a class="button alternativebutton underline_button credits_name-link panel_linetxt" href="https://www.behance.net/AntoineCharrier" target="_blank"><span>Antoine Charrier</span></a>
+          </div>
+          <div class="panel_section_title credits_who-dev">development</div>
+          <div class="panel_line_container">
+            <a class="button alternativebutton underline_button credits_name-link panel_linetxt" href="https://twitter.com/Latyr_" target="_blank"><span>Thomas Van Glabeke</span></a>
+            <a class="button alternativebutton underline_button credits_name-link panel_linetxt" href="https://twitter.com/BouvinetLudovic" target="_blank"><span>Ludovic Bouvinet</span></a>
+          </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="tuto">
+
+  <div class="tuto-wrapper">
+
+    <div class="tuto-container">
+      <div class="sounds_points">
+        <div class="point">
+          <div class="info">
+            <span>Sahara</span>
+          </div>
+        </div>
+      
+        <div class="tuto-cursor">
+          <svg>
+            <circle cx="13.5" cy="13.5" r="12" />
+          </svg>
+        </div>
+      </div>
+      
+      <div class="counter">
+        <div class="counter-body">
+          <div class="counter-body-number-wrapper">
+            <div class="counter-body-number-container">
+              <span class="counter-body-number-content">1</span>
+              <span class="counter-body-number-content">0</span>
+            </div>
+          </div>
+          <div class="counter-body-separator"></div>
+          <span class="counter-body-total">18</span>
+        </div>
+      
+      </div>
+    </div>
+
+    <!-- <span class="exp">Découvrez les 3 musiques dissimulées dans chaque scène</span> -->
+<span class="exp">Welcome at the first stop of your trip.<br>Search the 3 songs hidden in each scene.</span>
+
+  </div>
+</div>
+<!-- <div class="tuto"></div> -->
+
+
+    <div class="sounds_points" id="sounds_points">
+        <div class="point">
+          <div class="info">
+            <span>Bamako</span>
+          </div>
+        </div>
+        <div class="point">
+          <div class="info">
+            <span>Bamako</span>
+          </div>
+        </div>
+        <div class="point">
+          <div class="info">
+            <span>Bamako</span>
+          </div>
+        </div>
+    </div>
+
+    <div class="please_rotate">
+      <div class="please_rotate-picto"></div>
+      <div class="please_rotate-txt">Please rotate your phone</div>
+    </div>
+    <script type="text/javascript">
+        window.SETTINGS = {
+            spotify: JSON.parse('{"access_token":"BQAKTD-7Rg9fy8FIy4Pi2k8siZ-s0WY3ZjQdohtazIQHo8-s_-lgX33PAhb8yG-YzaK3KqHZ2DT7_bGzlv0","token_type":"Bearer","expires_in":3600,"scope":""}')
+        }
+    </script>
+    <script src="js/bundle.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-73524302-5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-73524302-5');
+    </script>
+</body>
+
+</html>
